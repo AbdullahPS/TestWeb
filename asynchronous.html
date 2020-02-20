@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asynchronous JavaScript</title>
+</head>
+<body>
+    <h1>Asynchronous JavaScript</h1>
+    <script>
+    //     const second = () =>{
+    //         setTimeout( () => {console.log('here is second' )
+            
+    //         },2000);
+    //     }
+    //     const third = () => {
+    //         setTimeout(
+    //             ()=> {console.log('this is third');}
+    //         ,3000);
+    
+
+    //     } 
+    // const first = () => {
+    //     console.log('Hey there');
+    //     second();
+    //     console.log('The end');
+    //     third();
+    // }
+
+    // first();
+
+    // //fake recipes
+    // //here we are simulating that we are getting some id's 
+    // //from a recipes this will take some time, so we have put a 
+    // //timer. After this we are doing another timer wich should use the 
+    // //pbtained id's
+    
+    // const getRecipe = () =>{
+
+    // setTimeout(()=> {
+    //     const ids = [1213,123,241,12323];
+    //     console.log(ids);
+    //     setTimeout((id)=>{
+    //         const objId = {title:'myTitle',isbn:123123};
+    //         console.log(`the title os ${objId.title} amd its isbn is ${objId.isbn}`);
+    //         console.log('id is '+ ids[2]);
+    //     },1000,ids)
+    // },1500)
+
+    // }
+    // getRecipe();
+
+    // //promises 
+    // /*
+    // States:
+    // 1. Pending
+    // 2. settled/resolved
+    // 3. if succes: fullfilled
+    //     else : rejected 
+    // */
+
+//     //example with above example on promise
+
+//     const myPromise = new Promise((resolved,rejected)=>{
+//         setTimeout ( () => {
+//             resolved([123,123123,123,213])
+//         },1500  );
+
+//     });
+// const promise2 = (id) => {
+// return new Promise ((resolved,rejected) =>{
+
+// setTimeout ((id)=> {
+// resolved(id);
+// },1500,id);
+
+// });
+
+// }; 
+
+// const thirdPromiseFunc = (el)=> {//func body
+//     return new Promise ( (resolved,rejected) => 
+//     {
+//         setTimeout ((el)=> {
+//             resolved (`The element u gave me was ${el}`);
+
+//         },5000,el);
+
+
+//     } );
+
+
+
+// }//func body
+
+
+
+
+//     myPromise.then( IDS =>{ 
+        
+        
+//         console.log(IDS);
+//         return promise2(IDS[2]);
+//         console.log(IDS[2]);}
+//         )
+//  .then (a => {
+//     console.log('here')
+
+//         console.log(a);
+//         return thirdPromiseFunc('Abdullah is the best ');
+//     })
+// .then(el => console.log(el))
+// .catch(error => {console.log('error');})
+
+////FINAAAAAALY
+
+///Ajax and Apis
+fetch('https://robwu.nl/https://www.metaweather.com/api/location/2487956/');
+
+
+    </script>
+</body>
+</html>
+
+
